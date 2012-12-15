@@ -5,7 +5,8 @@ var app = express();
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
 
-var port = process.env.PORT || 8001;
+// Port: Cloud 9, AppFog, or fall back to 3000
+var port = process.env.PORT || process.env.VCAP_APP_PORT || 3000;
 
 server.listen(port);
 
@@ -16,6 +17,13 @@ app.get('/', function (req, res) {
 app.get('/(js|css|img)/*', function(req, res){
   res.sendfile(__dirname + "/public/"+req.url);
 });
+
+/* Use xhr-polling for web hosts that don't fully support socket.io
+io.configure(function () {
+  io.set("transports", ["xhr-polling"]); 
+  io.set("polling duration", 10); 
+});
+*/
 
 io.sockets.on('connection', function (socket) {
   // echo the message
