@@ -17,5 +17,7 @@
         "socket.io": "0.9.13",
         "underscore": "*"
     },
-    "main": "./app"
+    "scripts": {
+        "start": "node ./app",
+    }
 }
