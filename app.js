@@ -5,8 +5,8 @@ var app = express();
 var server = http.createServer(app);
 var io = require('socket.io').listen(server);
 
-// Port: Cloud 9, AppFog, or fall back to 3000
-var port = process.env.PORT || process.env.VCAP_APP_PORT || 3000;
+// Port: Cloud 9, AppFog, or fall back to 80
+var port = process.env.PORT || process.env.VCAP_APP_PORT || 80;
 
 server.listen(port);
 

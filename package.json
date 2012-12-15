@@ -2,11 +2,11 @@
     "name": "refrigerator-magnets",
     "description": "example application with socket.io",
     "version": "0.0.1",
-    "contributors": [ 
+    "contributors": [
         {
             "name": "Tom Chapin",
             "email": "tchapin@gmail.com"
-        } 
+        }
     ],
     "repository": {
         "type": "git",
@@ -16,5 +16,12 @@
         "express": "3.0.4",
         "socket.io": "0.9.13",
         "underscore": "*"
+    },
+    "subdomain": "magnets",
+    "scripts": {
+        "start": "app.js"
+    },
+    "engines": {
+        "node": "0.8.x"
     }
 }
