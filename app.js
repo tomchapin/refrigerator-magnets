@@ -22,7 +22,7 @@ io.sockets.on('connection', function (socket) {
   socket.on('message', function (data) {
     console.info(data);
     //socket.send("[ECHO] " + data);
-    socket.emit('message', "test");
-    socket.broadcast.emit('message', "test");
+    socket.emit('message', data);
+    socket.broadcast.emit('message', data);
   });
 });
