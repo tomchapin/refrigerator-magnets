@@ -1,0 +1,19 @@
+{
+    "name": "refrigerator-magnets",
+    "description": "example application with socket.io",
+    "version": "0.0.1",
+    "contributors": [ 
+        {
+        "name": "Tom Chapin",
+        "email": "tchapin@gmail.com"
+        } 
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tomchapin/refrigerator-magnets.git"
+    },
+    "dependencies": {
+        "express": "*",
+        "socket.io": "*"
+    }
+}
