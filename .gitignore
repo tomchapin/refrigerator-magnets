@@ -1,5 +1,6 @@
 lib-cov
 .c9revisions
+node_modules
 *.seed
 *.log
 *.csv
@@ -7,6 +8,7 @@ lib-cov
 *.out
 *.pid
 *.gz
+*.stackdump
 
 pids
 logs
