@@ -1,4 +1,5 @@
 lib-cov
+.c9revisions
 *.seed
 *.log
 *.csv
