@@ -4,8 +4,8 @@
     "version": "0.0.1",
     "contributors": [ 
         {
-        "name": "Tom Chapin",
-        "email": "tchapin@gmail.com"
+            "name": "Tom Chapin",
+            "email": "tchapin@gmail.com"
         } 
     ],
     "repository": {
@@ -13,7 +13,9 @@
         "url": "https://github.com/tomchapin/refrigerator-magnets.git"
     },
     "dependencies": {
-        "express": "*",
-        "socket.io": "*"
-    }
+        "express": "3.0.4",
+        "socket.io": "0.9.13",
+        "underscore": "*"
+    },
+    "main": "./app"
 }

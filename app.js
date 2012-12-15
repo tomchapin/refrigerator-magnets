@@ -10,7 +10,11 @@ var port = process.env.PORT || 8001;
 server.listen(port);
 
 app.get('/', function (req, res) {
-  res.sendfile(__dirname + '/index.html');
+  res.sendfile(__dirname + '/public/index.html');
+});
+
+app.get('/(js|css|img)/*', function(req, res){
+  res.sendfile(__dirname + "/public/"+req.url);
 });
 
 io.sockets.on('connection', function (socket) {
