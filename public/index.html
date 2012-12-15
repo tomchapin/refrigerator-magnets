@@ -1,7 +1,7 @@
 <html>
   
   <head>
-    <title>Cloud9, NodeJS and Heroku: websockets for all</title>
+    <title>Cloud9 and NodeJS</title>
     <script src="/socket.io/socket.io.js"></script>
     <script>
       onerror = function (msg) {
@@ -48,7 +48,7 @@
       function send() {
         if (socket && socket.socket.connected) {
           socket.send(document.getElementById('text').value);
-          log('>' + document.getElementById('text').value);
+          //log('>' + document.getElementById('text').value);
         } else {
           log('Not connected.');
         }
@@ -58,7 +58,7 @@
         if (socket && socket.socket.connected) {
           for (var i = 0; i < 100; i += 1) {
             socket.send('test' + i);
-            log('> test' + i);
+            //log('> test' + i);
           }
         } else {
           log('Not connected.');
