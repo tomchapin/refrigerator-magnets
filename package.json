@@ -16,8 +16,5 @@
         "express": "3.0.4",
         "socket.io": "0.9.13",
         "underscore": "*"
-    },
-    "scripts": {
-        "start": "node ./app"
     }
 }
